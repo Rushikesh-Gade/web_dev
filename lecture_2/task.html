@@ -60,5 +60,29 @@
   <text x="300" y="115" text-anchor="middle" font-family="Arial" font-size="28" fill="#1f2937">Inline SVG</text>
 </svg>
 
+<h2>Canvas</h2> 
+<canvas id="myCanvas" width="600" height="400" style="border:1px solid #000000;"></canvas>
+<script>
+  const canvas = document.getElementById('myCanvas');
+  const ctx = canvas.getContext('2d');
+
+  // Draw a blue rectangle
+  ctx.fillStyle = '#3b82f6';
+  ctx.fillRect(50, 50, 200, 100);
+
+  // Draw a red circle
+  ctx.beginPath();
+  ctx.arc(400, 150, 50, 0, Math.PI * 2);
+  ctx.fillStyle = '#ef4444';
+  ctx.fill();
+
+  // Draw a green line
+  ctx.beginPath();
+  ctx.moveTo(50, 300);
+  ctx.lineTo(550, 300);
+  ctx.strokeStyle = '#10b981';
+  ctx.lineWidth = 5;
+  ctx.stroke();
+</script>
 </body>
 </html>
