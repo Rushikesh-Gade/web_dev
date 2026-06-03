@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Media Elements Demo</title>
+</head>
+<body>
+  <h1>HTML Media Elements Demo</h1>
+  <p>This page uses only HTML and shows img, audio, video, iframe, embed, object, svg, and canvas.</p>
+
+  <hr>
+
+  <h2>Image</h2>
+  <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Landscape with mountains and a lake" width="600">
+
+  <hr>
+
+  <h2>Audio</h2>
+  <audio controls>
+    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <hr>
+
+  <h2>Video</h2>
+  <video controls width="600" poster="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80">
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    Your browser does not support the video element.
+  </video>
+
+  <hr>
+
+  <h2>Iframe</h2>
+  <iframe
+    title="Example iframe content"
+    srcdoc='<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Iframe</title></head><body><h3>Inside an iframe</h3><p>This content is loaded with srcdoc.</p></body></html>'
+    width="600"
+    height="220"
+  ></iframe>
+
+  <hr>
+
+  <h2>Embed</h2>
+  <embed
+    type="image/svg+xml"
+    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='220' viewBox='0 0 600 220'%3E%3Crect width='600' height='220' fill='%23e0efff'/%3E%3Ccircle cx='120' cy='90' r='50' fill='%232563eb' fill-opacity='0.25'/%3E%3Ctext x='300' y='115' text-anchor='middle' font-size='28' font-family='Arial' fill='%231f2937'%3EEmbedded SVG%3C/text%3E%3C/svg%3E"
+    width="600"
+    height="220"
+  >
+
+  <hr>
+
+  <h2>Object SVG</h2>
+  <object
+    data="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='220' viewBox='0 0 600 220'%3E%3Crect width='600' height='220' fill='%23dbeafe'/%3E%3Ccircle cx='480' cy='70' r='45' fill='%232563eb' fill-opacity='0.2'/%3E%3Ctext x='300' y='115' text-anchor='middle' font-size='28' font-family='Arial' fill='%231f2937'%3EObject SVG%3C/text%3E%3C/svg%3E"
+    type="image/svg+xml"
+    width="600"
+    height="220"
+  >
+    Your browser does not support the object element.
+  </object>
+
+  <hr>
+
+  <h2>Inline SVG</h2>
+  <svg width="600" height="220" viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+    <rect width="600" height="220" fill="#fff7ed"></rect>
+    <circle cx="120" cy="90" r="50" fill="#f97316"></circle>
+    <path d="M70 170 C 170 120, 250 120, 350 170 S 520 220, 580 150" fill="none" stroke="#fb923c" stroke-width="10" stroke-linecap="round"></path>
+    <text x="300" y="115" text-anchor="middle" font-family="Arial" font-size="28" fill="#1f2937">Inline SVG</text>
+  </svg>
+
+  <hr>
+
+  <h2>Canvas</h2>
+  <canvas width="600" height="220">
+    Your browser does not support the canvas element.
+  </canvas>
+</body>
+</html>
