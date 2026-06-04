@@ -52,7 +52,7 @@ td[rowspan] {
 }
 
 tr:nth-child(even):not(:first-child) td {
-	background-color: #f9fbfe;
+	background-color: #edeff3;
 }
 
 td:hover,
