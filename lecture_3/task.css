@@ -88,11 +88,6 @@ body {
     flex: 1;
 }
 
-
-/* .stat-item:not(:last-child) {
-    /* border-right: 1px solid rgba(255, 255, 255, 0.2); */
-} */
-
 .stat-value {
     font-family: 'Georgia', serif;
     font-size: 22px;
