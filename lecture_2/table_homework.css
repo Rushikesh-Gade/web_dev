@@ -73,3 +73,11 @@ th:hover {
 		font-size: 13px;
 	}
 }
+button:hover {
+	background-color: #edeff3;
+
+}
+button:focus {
+	border: 1px solid #000000;
+
+}
