@@ -39,7 +39,7 @@ tr:first-child th {
 }
 
 tr:not(:first-child) td:first-child {
-	background: #edf3fb;
+	background: #edeff3;
 	font-weight: 700;
 	color: #e20e0e;
 }
