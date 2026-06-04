@@ -30,7 +30,7 @@ body {
 
 .card-image-container {
     width: 100%;
-    padding: 25px 25px 0 25px; 
+    padding: 0 25px 0 25px; 
 }
 
 .card-image {
