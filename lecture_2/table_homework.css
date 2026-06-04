@@ -7,72 +7,67 @@ body {
 	min-height: 100vh;
 	display: grid;
 	place-items: center;
-	padding: 32px 16px;
-	background:
-		radial-gradient(circle at top, rgba(255, 255, 255, 0.95), rgba(240, 245, 255, 0.95) 45%, rgba(224, 232, 244, 1) 100%);
+	padding: 28px 16px;
+	background: #f4f7fb;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 table {
-	border-collapse: separate;
-	border-spacing: 0;
+	border-collapse: collapse;
 	width: min(100%, 1100px);
 	margin: 0 auto;
 	background: #ffffff;
-	border-radius: 18px;
+	border-radius: 10px;
 	overflow: hidden;
-	box-shadow: 0 18px 45px rgba(31, 41, 55, 0.16);
-	border: 1px solid rgba(148, 163, 184, 0.3);
+	box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+	border: 1px solid #d7dee8;
 	text-align: center;
 }
 
 th,
 td {
-	padding: 16px 14px;
-	border: 1px solid rgba(148, 163, 184, 0.35);
+	padding: 14px 12px;
+	border: 1px solid #d7dee8;
 	color: #1f2937;
 	font-size: 15px;
 }
 
 tr:first-child th {
-	background: linear-gradient(135deg, #1f3c88, #3b82f6);
+	background: #3f6fb5;
 	color: #ffffff;
 	font-weight: 700;
-	letter-spacing: 0.03em;
 }
 
 tr:not(:first-child) td:first-child {
-	background: linear-gradient(180deg, #eff6ff, #dbeafe);
+	background: #edf3fb;
 	font-weight: 700;
 	color: #1d4ed8;
 }
 
 td[rowspan] {
-	background: linear-gradient(180deg, #fef3c7, #fde68a);
+	background: #fff4cc;
 	font-weight: 800;
 	color: #92400e;
-	letter-spacing: 0.28em;
 	line-height: 1.6;
 }
 
 tr:nth-child(even):not(:first-child) td {
-	background-color: #f8fbff;
+	background-color: #f9fbfe;
 }
 
 td:hover,
 th:hover {
-	background-color: rgba(59, 130, 246, 0.08);
-	transition: background-color 0.2s ease;
+	background-color: #eef4fb;
 }
 
 @media (max-width: 768px) {
 	body {
-		padding: 16px 10px;
+		padding: 14px 8px;
 	}
 
 	th,
 	td {
-		padding: 12px 10px;
+		padding: 10px 8px;
 		font-size: 13px;
 	}
 }
