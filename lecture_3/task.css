@@ -19,13 +19,16 @@ body {
 .card {
     background-color: whitesmoke;
     width: 100%;
-    max-width: 350px;
+    max-width: 420px;
     border-radius: 4px;
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
+
 }
 
 
 .card-image-container {
     width: 100%;
+   
 }
 
 .card-image {
@@ -41,7 +44,7 @@ body {
     text-align: center;
 }
 
-.days {
+.card-date {
     display: block;
     font-size: 14px;
     color: #d13b65;
@@ -81,6 +84,11 @@ body {
     flex-direction: column;
     align-items: center;
     flex: 1;
+}
+
+
+.stat-item:not(:last-child) {
+    border-right: 3px solid rgb(242, 200, 4);
 }
 
 .stat-value {
