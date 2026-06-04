@@ -57,7 +57,7 @@ tr:nth-child(even):not(:first-child) td {
 
 td:hover,
 th:hover {
-	background-color: #eef4fb;
+	background-color: #edeff3;
 }
 
 @media (max-width: 768px) {
