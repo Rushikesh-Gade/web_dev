@@ -41,7 +41,7 @@ tr:first-child th {
 tr:not(:first-child) td:first-child {
 	background: #edf3fb;
 	font-weight: 700;
-	color: #1d4ed8;
+	color: #e20e0e;
 }
 
 td[rowspan] {
