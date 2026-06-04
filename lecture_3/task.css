@@ -73,7 +73,7 @@ body {
     background-color: #d13b65; 
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     padding: 20px 10px;
     color: #ffffff;
     margin-top: auto; 
@@ -82,13 +82,25 @@ body {
 .stat-item {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     flex: 1;
+    position: relative;
 }
 
 
 .stat-item:not(:last-child) {
-    border-right: 3px solid rgb(242, 200, 4);
+    border-right: none;
+}
+
+.stat-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background-color: rgb(242, 200, 4);
 }
 
 .stat-value {
