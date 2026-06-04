@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #e0eae4; /* Light greenish/grey background matching the photo environment */
+    background-color: #e0eae4; 
     font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: center;
@@ -15,7 +15,7 @@ body {
     padding: 20px;
 }
 
-/* Card Container */
+
 .card {
     background-color: #ffffff;
     width: 100%;
@@ -27,10 +27,10 @@ body {
     flex-direction: column;
 }
 
-/* Image Styling */
+
 .card-image-container {
     width: 100%;
-    padding: 25px 25px 0 25px; /* Creates the border spacing around the image */
+    padding: 25px 25px 0 25px; 
 }
 
 .card-image {
@@ -40,7 +40,7 @@ body {
     display: block;
 }
 
-/* Text Content Styling */
+
 .card-content {
     padding: 25px;
     text-align: center;
@@ -59,26 +59,26 @@ body {
     font-family: 'Georgia', serif;
     font-size: 28px;
     font-weight: bold;
-    color: #1a2c22; /* Dark forest green/black text */
+    color: #1a2c22; 
     margin-bottom: 15px;
 }
 
 .card-text {
     font-size: 15px;
-    color: #556b5c; /* Muted text color */
+    color: #556b5c; 
     line-height: 1.6;
     font-family: 'Georgia', serif;
 }
 
-/* Pink Footer Stats Section */
+
 .card-footer {
-    background-color: #d13b65; /* Vibrant pink/raspberry color from image */
+    background-color: #d13b65; 
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px 10px;
     color: #ffffff;
-    margin-top: auto; /* Pushes footer to bottom if card expands */
+    margin-top: auto; 
 }
 
 .stat-item {
@@ -88,7 +88,7 @@ body {
     flex: 1;
 }
 
-/* Adds the subtle separators between stats */
+
 .stat-item:not(:last-child) {
     border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -100,12 +100,12 @@ body {
     margin-bottom: 4px;
 }
 
-.stat-value sup {
+.no sup {
     font-size: 12px;
     vertical-align: super;
 }
 
-.stat-label {
+.name {
     font-size: 11px;
     letter-spacing: 1.5px;
     font-weight: 600;
