@@ -33,7 +33,7 @@ td {
 }
 
 tr:first-child th {
-	background: #3f6fb5;
+	background: #000000;
 	color: #ffffff;
 	font-weight: 700;
 }
@@ -41,13 +41,13 @@ tr:first-child th {
 tr:not(:first-child) td:first-child {
 	background: #edf3fb;
 	font-weight: 700;
-	color: #1d4ed8;
+	color: #01030b;
 }
 
 td[rowspan] {
 	background: #fff4cc;
 	font-weight: 800;
-	color: #92400e;
+	color: #f30909;
 	line-height: 1.6;
 }
 
