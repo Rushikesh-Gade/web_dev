@@ -1,4 +1,4 @@
-
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: whitesmoke; 
+    background-color: white; /* Light environment background color */
     font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: center;
@@ -15,20 +15,22 @@ body {
     padding: 20px;
 }
 
-
+/* Card Container */
 .card {
-    background-color: whitesmoke;
+    background-color:white;
     width: 100%;
-    max-width: 420px;
+    max-width: 350px;
     border-radius: 4px;
-    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
-
+/* Image Styling */
 .card-image-container {
     width: 100%;
-   
+    
 }
 
 .card-image {
@@ -38,7 +40,7 @@ body {
     display: block;
 }
 
-
+/* Text Content Styling */
 .card-content {
     padding: 25px;
     text-align: center;
@@ -68,41 +70,33 @@ body {
     font-family: 'Georgia', serif;
 }
 
-
+/* Pink Footer Stats Section */
 .card-footer {
-    background-color: #d13b65; 
+    background-color: #d13b65; /* Vibrant pink/raspberry color */
     display: flex;
     justify-content: space-around;
-    align-items: stretch;
-    padding: 20px 10px;
+    align-items: stretch;     /* CRITICAL: Forces children items to stretch full height */
+    padding: 0;               /* CRITICAL: Inner content controls the spacing now */
     color: #ffffff;
-    margin-top: auto; 
+    margin-top: auto;
 }
 
+/* Individual Stat Compartments */
 .stat-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex: 1;
-    position: relative;
+    padding: 24px 10px;       /* Adds padding directly inside the sections */
 }
 
-
-.stat-item:not(:last-child) {
-    border-right: none;
+/* The Full-Height Yellow Line Changer */
+.has-divider {
+    border-right: 3px solid red; /* Crisp yellow border going top to bottom */
 }
 
-.stat-item:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 3px;
-    height: 100%;
-    background-color: rgb(242, 200, 4);
-}
-
+/* Footer Typography Details */
 .stat-value {
     font-family: 'Georgia', serif;
     font-size: 22px;
@@ -110,14 +104,14 @@ body {
     margin-bottom: 4px;
 }
 
-.no sup {
+.stat-value sup {
     font-size: 12px;
     vertical-align: super;
 }
 
-.name {
+.stat-label {
     font-size: 11px;
     letter-spacing: 1.5px;
-    font-weight: 600;
-    opacity: 0.9;
+    font-weight: 700;
+    opacity: 0.95;
 }
