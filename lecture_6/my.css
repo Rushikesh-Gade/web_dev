@@ -20,7 +20,7 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 900px;
-    padding: 40px;
+    padding: 10px;
     background: transparent;
 }
 
@@ -28,7 +28,7 @@ body {
 .slider-container {
     position: relative;
     width: 350px;
-    height: 400px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,8 +36,8 @@ body {
 
 .card-stack {
     position: relative;
-    width: 300px;
-    height: 180px;
+    width: 350px;
+    height: 200px;
 }
 
 .card {
