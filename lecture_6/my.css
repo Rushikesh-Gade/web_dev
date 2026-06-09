@@ -1,4 +1,4 @@
-/* Reset & Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
 }
 
-/* Layout Wrapper */
+
 .card-wrapper {
     display: flex;
     align-items: center;
@@ -24,9 +24,7 @@ body {
     background: transparent;
 }
 
-/* ==========================================
-   LEFT SIDE: STACKED CARDS
-   ========================================== */
+
 .slider-container {
     position: relative;
     width: 350px;
