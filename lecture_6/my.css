@@ -75,11 +75,19 @@ body {
 .card-front-2 { transform: translateY(70px) scale(0.92); z-index: 8; opacity: 0.7; }
 .card-front-3 { transform: translateY(130px) scale(0.85); z-index: 7; opacity: 0.4; }
 
-.card-back-3 { hover: transform: translateY(-130px) scale(0.9); opacity: 0.5; }
-.card-back-2 { hover: transform: translateY(-70px) scale(0.95); opacity: 0.8; }
+.card-back-3:hover { z-index: 20;
+    transform: scale(1.05);
+    border: 2px solid transparent; opacity: 1; }
+.card-back-2:hover { z-index: 20;
+    transform: scale(1.05);
+    border: 2px solid transparent; opacity: 1; }
 
-.card-front-2 { hover: transform: translateY(70px) scale(0.95); opacity: 0.8; }
-.card-front-3 { hover: transform: translateY(130px) scale(0.9); opacity: 0.5; }
+.card-front-2:hover { z-index: 20;
+    transform: scale(1.05);
+    border: 2px solid transparent; opacity: 1; }
+.card-front-3:hover { z-index: 20;
+    transform: scale(1.05);
+    border: 2px solid transparent; opacity: 1; }
 
 
 .info-container {
@@ -168,6 +176,6 @@ body {
 }
 
 .dot.class-active {
-    background-color: #0d2c74;
+    background-color: #21418b;
     transform: scale(1.2);
 }
