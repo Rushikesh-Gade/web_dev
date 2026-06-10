@@ -1,0 +1,66 @@
+/* Custom resets & cursors */
+span, .icon, .rotate, .tool-pop span { cursor: pointer; }
+
+/* Header & Nav */
+.top { height: 56px; background: linear-gradient(90deg, #00c4cc, #7d2ae8); font-size: 14px; }
+.trial-btn { background: rgba(255,255,255,0.2); }
+
+/* Sidebar Widths */
+.menu { width: 72px; }
+.panel { width: 320px; }
+
+/* Icon Menu Styling */
+.icon { font-size: 11px; color: #666; text-align: center; }
+.icon.active { color: #7d2ae8; }
+.icon .box { width: 24px; height: 24px; background: #f3f4f6; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 14px; margin: 0 auto 4px; }
+.icon.active .box { background: none; color: #7d2ae8; }
+
+/* Panel Grid Items */
+.btn-search { background: #8b3dff; }
+.recent { width: 100px; height: 50px; }
+.card { height: 80px; display: flex; align-items: center; justify-content: center; border-radius: 6px; border: none; }
+.dark { background: #222; }
+.black { background: #000; }
+.brown { background: #554c44; }
+.darkred { background: #8b1122; }
+
+/* Floating Tools */
+.dot { width: 20px; height: 20px; border-radius: 50%; border: 1px solid #ddd; }
+
+/* Canvas Grid */
+.board { width: 800px; height: 450px; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(2, 1fr); }
+.shape { width: 110px; height: 110px; }
+
+/* Shape Colors & Clips */
+.bg-lime { background: #bbf754; }
+.bg-yellow { background: #ffda55; }
+.bg-orange { background: #f77f22; }
+.bg-blue { background: #1a0ab3; }
+.bg-purple { background: #c965f0; }
+.bg-violet { background: #885df1; }
+
+.tri { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+.penta { clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); }
+.cross { clip-path: polygon(35% 0%, 65% 0%, 65% 35%, 100% 35%, 100% 65%, 65% 65%, 65% 100%, 35% 100%, 35% 65%, 0% 65%, 0% 35%, 35% 35%); }
+.para { transform: skewX(-20deg); width: 130px; }
+.arrow { clip-path: polygon(50% 0%, 100% 45%, 70% 45%, 70% 100%, 30% 100%, 30% 45%, 0% 45%); }
+
+/* Selected Heart UI */
+.select-box { width: 130px; height: 120px; }
+.heart { width: 110px; height: 100px; fill: #ff3344; }
+.tool-pop { top: -40px; font-size: 12px; white-space: nowrap; }
+.rotate { width: 24px; height: 24px; bottom: -30px; font-size: 12px; }
+
+/* Selection Handles */
+.hnd { position: absolute; width: 10px; height: 10px; background: white; border: 1px solid #0d6efd; border-radius: 50%; }
+.h-tl { top: -5px; left: -5px; } .h-tr { top: -5px; right: -5px; }
+.h-bl { bottom: -5px; left: -5px; } .h-br { bottom: -5px; right: -5px; }
+
+.pill { position: absolute; background: white; border: 1px solid #0d6efd; border-radius: 4px; }
+.p-t, .p-b { width: 16px; height: 6px; left: calc(50% - 8px); }
+.p-l, .p-r { width: 6px; height: 16px; top: calc(50% - 8px); }
+.p-t { top: -3px; } .p-b { bottom: -3px; }
+.p-l { left: -3px; } .p-r { right: -3px; }
+
+/* Bottom Bar Previews */
+.page { width: 16px; height: 12px; font-size: 10px; }
