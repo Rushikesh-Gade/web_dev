@@ -3,192 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Bootstrap </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Design Tool UI</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="vh-100 d-flex flex-column overflow-hidden bg-light">
+<body>
 
-    <header class="top-nav d-flex align-items-center justify-content-between px-3 text-white flex-shrink-0">
-        <div class="d-flex align-items-center gap-3">
-            <span class="cursor-pointer">☰</span>
-            <span class="cursor-pointer">File</span>
-            <span class="cursor-pointer">Resize</span>
-            <span class="cursor-pointer">✏️ Editing</span>
-            <span class="cursor-pointer">↩️</span>
-            <span class="cursor-pointer">↪️</span>
-            <span class="cursor-pointer">☁️</span>
+<div class="app">
+    
+    <div class="top">
+        <div class="nav">
+            <span>☰</span> <span>File</span> <span>Resize</span> <span>✏️ Editing</span> <span>↩️</span> <span>↪️</span> <span>☁️</span>
         </div>
-        <div class="d-flex align-items-center gap-3">
+        <div class="nav">
             <span>Sample</span>
-            <div class="btn-trial px-3 py-1 rounded">👑 Start your trial for ₹0</div>
+            <button class="btn-trial">👑 Start your trial for ₹0</button>
         </div>
-        <div class="d-flex align-items-center gap-3">
-            <span class="cursor-pointer">👤</span>
-            <span class="cursor-pointer">📊</span>
-            <span class="cursor-pointer">👑</span>
-            <span class="cursor-pointer">Present</span>
-            <a href="#" class="btn btn-light text-primary fw-bold btn-sm px-3">Share</a>
+        <div class="nav">
+            <span>👤</span> <span>📊</span> <span>👑</span> <span>Present</span>
+            <button class="btn-share">Share</button>
         </div>
-    </header>
-
-    <div class="d-flex flex-grow-1 overflow-hidden">
-        
-        <nav class="sidebar-thin bg-white border-end d-flex flex-column align-items-center pt-3 gap-3 z-2">
-            <div class="tool-icon active text-center cursor-pointer">
-                <div class="icon-box d-flex align-items-center justify-content-center rounded mx-auto fs-5">📑</div>
-                <span class="small">Templates</span>
-            </div>
-            <div class="tool-icon text-center cursor-pointer">
-                <div class="icon-box d-flex align-items-center justify-content-center rounded mx-auto fs-5 bg-light">💠</div>
-                <span class="small text-secondary">Elements</span>
-            </div>
-            <div class="tool-icon text-center cursor-pointer">
-                <div class="icon-box d-flex align-items-center justify-content-center rounded mx-auto fs-5 bg-light">Ⓣ</div>
-                <span class="small text-secondary">Text</span>
-            </div>
-            <div class="tool-icon text-center cursor-pointer">
-                <div class="icon-box d-flex align-items-center justify-content-center rounded mx-auto fs-5 bg-light">👑</div>
-                <span class="small text-secondary">Brand</span>
-            </div>
-            <div class="tool-icon text-center cursor-pointer">
-                <div class="icon-box d-flex align-items-center justify-content-center rounded mx-auto fs-5 bg-light">☁️</div>
-                <span class="small text-secondary">Uploads</span>
-            </div>
-            <div class="tool-icon text-center cursor-pointer">
-                <div class="icon-box d-flex align-items-center justify-content-center rounded mx-auto fs-5 bg-light">✏️</div>
-                <span class="small text-secondary">Draw</span>
-            </div>
-            <div class="tool-icon text-center cursor-pointer">
-                <div class="icon-box d-flex align-items-center justify-content-center rounded mx-auto fs-5 bg-light">📁</div>
-                <span class="small text-secondary">Projects</span>
-            </div>
-            <div class="tool-icon text-center cursor-pointer">
-                <div class="icon-box d-flex align-items-center justify-content-center rounded mx-auto fs-5 bg-light">⬛</div>
-                <span class="small text-secondary">Apps</span>
-            </div>
-        </nav>
-
-        <aside class="sidebar-wide bg-white border-end d-flex flex-column overflow-auto">
-            <div class="p-3 border-bottom">
-                <div class="input-group mb-2">
-                    <span class="input-group-text bg-white border-end-0">✨</span>
-                    <input type="text" class="form-control border-start-0 border-end-0 shadow-none px-0" placeholder="Describe your ideal design">
-                    <span class="input-group-text bg-white border-start-0 cursor-pointer">🎤</span>
-                </div>
-                <div class="d-flex gap-2">
-                    <button class="btn btn-outline-secondary w-100 fw-semibold text-dark">✨ Generate</button>
-                    <button class="btn custom-primary-btn w-100 fw-semibold text-white">Search</button>
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-between align-items-center px-3 mt-3 mb-2">
-                <span class="fw-bold small text-dark">Recently used</span>
-                <span class="small text-secondary cursor-pointer">See all</span>
-            </div>
-            <div class="d-flex gap-2 px-3 overflow-hidden">
-                <div class="recent-item bg-light border rounded"></div>
-                <div class="recent-item bg-light border rounded"></div>
-                <div class="recent-item bg-light border rounded"></div>
-            </div>
-
-            <div class="px-3 mt-4 mb-2">
-                <span class="fw-bold small text-dark">All results</span>
-            </div>
-            <div class="row g-2 px-3 pb-3 m-0">
-                <div class="col-6"><div class="template-card bg-dark text-white rounded d-flex align-items-center justify-content-center fw-bold text-center">PORTO<br>FOLIO.</div></div>
-                <div class="col-6"><div class="template-card bg-black text-white rounded d-flex align-items-center justify-content-center fw-bold text-center">Creative<br>Portfolio</div></div>
-                <div class="col-6"><div class="template-card bg-danger text-white rounded d-flex align-items-center justify-content-center fw-bold text-center">CREATIVE<br>BRIEF</div></div>
-                <div class="col-6"><div class="template-card bg-secondary text-white rounded d-flex align-items-center justify-content-center fw-bold text-center">Creative<br>Portfolio</div></div>
-                <div class="col-6"><div class="template-card custom-brown text-white rounded d-flex align-items-center justify-content-center fw-bold text-center">PITCH<br>DECK</div></div>
-                <div class="col-6"><div class="template-card custom-darkred text-white rounded d-flex align-items-center justify-content-center fw-bold text-center">PITCH<br>DECK</div></div>
-                <div class="col-6"><div class="template-card bg-light text-dark rounded d-flex align-items-center justify-content-center fw-bold text-center">portfolio</div></div>
-                <div class="col-6"><div class="template-card bg-light text-dark rounded d-flex align-items-center justify-content-center fw-bold text-center">portfolio</div></div>
-            </div>
-        </aside>
-
-        <main class="flex-grow-1 d-flex flex-column position-relative bg-light">
-            
-            <div class="toolbar-top position-absolute bg-white shadow-sm rounded-pill px-3 py-2 d-flex align-items-center gap-3 z-3 start-50 translate-middle-x mt-3">
-                <span class="cursor-pointer small fw-semibold text-dark">Edit</span>
-                <div class="color-circle rounded-circle border custom-bg-red"></div>
-                <div class="vr"></div>
-                <span class="cursor-pointer">≡</span>
-                <span class="cursor-pointer">☷</span>
-                <div class="vr"></div>
-                <span class="cursor-pointer small fw-semibold text-dark">Effects</span>
-                <span class="cursor-pointer small fw-semibold text-dark">Animate</span>
-                <span class="cursor-pointer small fw-semibold text-dark">Position</span>
-                <div class="vr"></div>
-                <span class="cursor-pointer">🖌️</span>
-            </div>
-
-            <div class="flex-grow-1 d-flex align-items-center justify-content-center overflow-auto p-5">
-                <div class="canvas-board bg-white shadow bg-body rounded position-relative p-5">
-                    
-                    <div class="custom-grid">
-                        <div class="shape circle custom-bg-lime rounded-circle"></div>
-                        <div class="shape square custom-bg-yellow"></div>
-                        <div class="shape triangle custom-bg-orange"></div>
-                        <div class="shape pentagon custom-bg-blue"></div>
-
-                        <div class="shape cross bg-black"></div>
-                        <div class="shape parallelogram custom-bg-purple"></div>
-                        <div class="shape arrow-up custom-bg-violet"></div>
-                        
-                        <div class="selected-wrapper border custom-border-primary d-flex align-items-center justify-content-center position-relative">
-                            <div class="floating-tools position-absolute bg-white border shadow-sm rounded px-2 py-1 d-flex gap-2 z-3">
-                                <span class="cursor-pointer">↻</span>
-                                <span class="cursor-pointer">🔓</span>
-                                <span class="cursor-pointer">❐</span>
-                                <span class="cursor-pointer text-danger">🗑️</span>
-                                <span class="cursor-pointer">•••</span>
-                            </div>
-                            
-                            <svg class="heart-svg" viewBox="0 0 100 100">
-                                <path d="M 50 90 C 10 60, -10 20, 25 5 C 40 -2, 50 15, 50 15 C 50 15, 60 -2, 75 5 C 110 20, 90 60, 50 90 Z" />
-                            </svg>
-
-                            <div class="handle tl"></div>
-                            <div class="handle tr"></div>
-                            <div class="handle bl"></div>
-                            <div class="handle br"></div>
-                            <div class="handle-pill top"></div>
-                            <div class="handle-pill bottom"></div>
-                            <div class="handle-pill left"></div>
-                            <div class="handle-pill right"></div>
-                            
-                            <div class="rotate-icon bg-white shadow-sm rounded-circle d-flex align-items-center justify-content-center cursor-pointer">↻</div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <footer class="bg-white border-top d-flex align-items-center justify-content-between px-3 py-2 text-secondary small">
-                <div class="d-flex align-items-center gap-3">
-                    <span class="cursor-pointer">📝 Notes</span>
-                    <span class="cursor-pointer">⏱️ Timer</span>
-                </div>
-                
-                <div class="mini-preview bg-light border rounded px-2 py-1 d-flex align-items-center gap-2">
-                    <span class="bg-primary rounded-1"></span>
-                    <span class="bg-primary rounded-1"></span>
-                    <span class="bg-primary rounded-1"></span>
-                    <span class="border rounded-1 d-flex align-items-center justify-content-center text-dark">+</span>
-                </div>
-
-                <div class="d-flex align-items-center gap-3">
-                    <input type="range" class="form-range" min="10" max="200" value="53" style="width: 80px;">
-                    <span>53%</span>
-                    <span class="cursor-pointer">⊞ Pages</span>
-                    <span>1 / 1</span>
-                    <span class="cursor-pointer fs-5">⤢</span>
-                </div>
-            </footer>
-        </main>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="body">
+        
+        <div class="menu">
+            <div class="icon active"><div class="box">📑</div>Templates</div>
+            <div class="icon"><div class="box">💠</div>Elements</div>
+            <div class="icon"><div class="box">Ⓣ</div>Text</div>
+            <div class="icon"><div class="box">👑</div>Brand</div>
+            <div class="icon"><div class="box">☁️</div>Uploads</div>
+            <div class="icon"><div class="box">✏️</div>Draw</div>
+            <div class="icon"><div class="box">📁</div>Projects</div>
+            <div class="icon"><div class="box">⬛</div>Apps</div>
+        </div>
+
+        <div class="panel">
+            <div class="search-wrap">
+                <div class="search">
+                    <span>✨</span>
+                    <input type="text" placeholder="Describe your ideal design">
+                    <span>🎤</span>
+                </div>
+                <div class="actions">
+                    <button class="btn-gen">✨ Generate</button>
+                    <button class="btn-find">Search</button>
+                </div>
+            </div>
+
+            <div class="title">Recently used <span>See all</span></div>
+            <div class="recent-list">
+                <div class="recent"></div>
+                <div class="recent"></div>
+                <div class="recent"></div>
+            </div>
+
+            <div class="title">All results</div>
+            <div class="grid">
+                <div class="card dark">PORTO<br>FOLIO.</div>
+                <div class="card black">Creative<br>Portfolio</div>
+                <div class="card red">CREATIVE<br>BRIEF</div>
+                <div class="card grey">Creative<br>Portfolio</div>
+                <div class="card brown">PITCH<br>DECK</div>
+                <div class="card darkred">PITCH<br>DECK</div>
+                <div class="card light text-dark">portfolio</div>
+                <div class="card light text-dark">portfolio</div>
+                <div class="card black">PORTFOLIO</div>
+                <div class="card dark">DIGITAL</div>
+            </div>
+        </div>
+
+        <div class="main">
+            
+            <div class="float-bar">
+                <span>Edit</span>
+                <div class="dot color-red"></div>
+                <div class="line"></div>
+                <span>≡</span> <span>☷</span>
+                <div class="line"></div>
+                <span>Effects</span> <span>Animate</span> <span>Position</span>
+                <div class="line"></div>
+                <span>🖌️</span>
+            </div>
+
+            <div class="work-area">
+                <div class="board">
+                    <div class="shape circle"></div>
+                    <div class="shape square"></div>
+                    <div class="shape tri"></div>
+                    <div class="shape penta"></div>
+
+                    <div class="shape cross"></div>
+                    <div class="shape para"></div>
+                    <div class="shape arrow"></div>
+                    
+                    <div class="select-box">
+                        <div class="tool-pop">
+                            <span>↻</span> <span>🔓</span> <span>❐</span> <span class="trash">🗑️</span> <span>•••</span>
+                        </div>
+                        
+                        <svg class="heart" viewBox="0 0 100 100">
+                            <path d="M 50 90 C 10 60, -10 20, 25 5 C 40 -2, 50 15, 50 15 C 50 15, 60 -2, 75 5 C 110 20, 90 60, 50 90 Z" />
+                        </svg>
+
+                        <div class="dot-tl"></div> <div class="dot-tr"></div>
+                        <div class="dot-bl"></div> <div class="dot-br"></div>
+                        <div class="pill-t"></div> <div class="pill-b"></div>
+                        <div class="pill-l"></div> <div class="pill-r"></div>
+                        
+                        <div class="rotate">↻</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bot">
+                <div class="bot-nav"> <span>📝 Notes</span> <span>⏱️ Timer</span> </div>
+                <div class="preview">
+                    <span class="page active"></span> <span class="page active"></span> <span class="page active"></span> <span class="page add">+</span>
+                </div>
+                <div class="bot-nav">
+                    <input type="range" min="1" max="100" value="53">
+                    <span>53%</span> <span>⊞ Pages</span> <span>1 / 1</span> <span class="full">⤢</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
