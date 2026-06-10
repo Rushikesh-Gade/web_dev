@@ -1,24 +1,24 @@
-/* Custom resets & cursors */
+
 span, .icon, .rotate, .tool-pop span { cursor: pointer; }
 
-/* Header & Nav */
+
 .top { height: 56px; background: linear-gradient(90deg, #00c4cc, #7d2ae8); font-size: 14px; }
 .trial-btn { background: rgba(255,255,255,0.2); }
 
-/* Sidebar Widths */
+
 .menu { width: 72px; }
 .panel { width: 320px; }
 
-/* Icon Menu Styling */
+
 .icon { font-size: 11px; color: #666; text-align: center; }
 .icon.active { color: #7d2ae8; }
 .icon .box { width: 24px; height: 24px; background: #f3f4f6; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 14px; margin: 0 auto 4px; }
 .icon.active .box { background: none; color: #7d2ae8; }
 
-/* Panel Grid Items (Updated for Images) */
+
 .btn-search { background: #8b3dff; }
 
-/* Image Containers */
+
 .recent { width: 100px; height: 50px; overflow: hidden; background: #eee; }
 .recent img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
@@ -26,14 +26,14 @@ span, .icon, .rotate, .tool-pop span { cursor: pointer; }
 .tpl-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .tpl-card:hover { cursor: pointer; opacity: 0.9; }
 
-/* Floating Tools */
+
 .dot { width: 20px; height: 20px; border-radius: 50%; border: 1px solid #ddd; }
 
-/* Canvas Grid */
+
 .board { width: 800px; height: 450px; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(2, 1fr); }
 .shape { width: 110px; height: 110px; }
 
-/* Shape Colors & Clips */
+
 .bg-lime { background: #bbf754; }
 .bg-yellow { background: #ffda55; }
 .bg-orange { background: #f77f22; }
@@ -47,13 +47,13 @@ span, .icon, .rotate, .tool-pop span { cursor: pointer; }
 .para { transform: skewX(-20deg); width: 130px; }
 .arrow { clip-path: polygon(50% 0%, 100% 45%, 70% 45%, 70% 100%, 30% 100%, 30% 45%, 0% 45%); }
 
-/* Selected Heart UI */
+
 .select-box { width: 130px; height: 120px; }
 .heart { width: 110px; height: 100px; fill: #ff3344; }
 .tool-pop { top: -40px; font-size: 12px; white-space: nowrap; }
 .rotate { width: 24px; height: 24px; bottom: -30px; font-size: 12px; }
 
-/* Selection Handles */
+
 .hnd { position: absolute; width: 10px; height: 10px; background: white; border: 1px solid #0d6efd; border-radius: 50%; }
 .h-tl { top: -5px; left: -5px; } .h-tr { top: -5px; right: -5px; }
 .h-bl { bottom: -5px; left: -5px; } .h-br { bottom: -5px; right: -5px; }
@@ -64,5 +64,5 @@ span, .icon, .rotate, .tool-pop span { cursor: pointer; }
 .p-t { top: -3px; } .p-b { bottom: -3px; }
 .p-l { left: -3px; } .p-r { right: -3px; }
 
-/* Bottom Bar Previews */
+
 .page { width: 16px; height: 12px; font-size: 10px; }
