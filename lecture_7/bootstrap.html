@@ -3,10 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boostrap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6F" crossorigin="anonymous">
+    <title>Design Tool UI</title>
+    <link rel="stylesheet" href="bootstrap.css">
 </head>
 <body>
+
+<div class="app-container" style="height: 100%; display: flex; flex-direction: column;">
     
+    <header class="top-nav">
+        <div class="nav-left">
+            <span>☰</span>
+            <span>File</span>
+            <span>Resize</span>
+            <span>✏️ Editing</span>
+            <span>↩️</span>
+            <span>↪️</span>
+            <span>☁️</span>
+        </div>
+        <div class="nav-center">
+            <span>Sample</span>
+            <div class="btn-trial">👑 Start your trial for ₹0</div>
+        </div>
+        <div class="nav-right">
+            <span>👤</span>
+            <span>📊</span>
+            <span>👑</span>
+            <span>Present</span>
+            <a href="#" class="btn-share">Share</a>
+        </div>
+    </header>
+
+    <div class="main-body">
+        
+        <nav class="sidebar-thin">
+            <div class="tool-icon active">
+                <div class="icon-box" style="background: none; color: #7d2ae8;">📑</div>
+                <span>Templates</span>
+            </div>
+            <div class="tool-icon">
+                <div class="icon-box">💠</div>
+                <span>Elements</span>
+            </div>
+            <div class="tool-icon">
+                <div class="icon-box">Ⓣ</div>
+                <span>Text</span>
+            </div>
+            <div class="tool-icon">
+                <div class="icon-box">👑</div>
+                <span>Brand</span>
+            </div>
+            <div class="tool-icon">
+                <div class="icon-box">☁️</div>
+                <span>Uploads</span>
+            </div>
+            <div class="tool-icon">
+                <div class="icon-box">✏️</div>
+                <span>Draw</span>
+            </div>
+            <div class="tool-icon">
+                <div class="icon-box">📁</div>
+                <span>Projects</span>
+            </div>
+            <div class="tool-icon">
+                <div class="icon-box">⬛</div>
+                <span>Apps</span>
+            </div>
+        </nav>
+
+        <aside class="sidebar-wide">
+            <div class="panel-header">
+                <div class="search-box">
+                    <span>✨</span>
+                    <input type="text" placeholder="Describe your ideal design">
+                    <span>🎤</span>
+                </div>
+                <div class="panel-buttons">
+                    <button class="btn-generate">✨ Generate</button>
+                    <button class="btn-search">Search</button>
+                </div>
+            </div>
+
+            <div class="section-title">
+                <span>Recently used</span>
+                <span style="color: #6b7280; font-weight: normal;">See all</span>
+            </div>
+            <div class="recently-used">
+                <div class="recent-item"></div>
+                <div class="recent-item"></div>
+                <div class="recent-item"></div>
+            </div>
+
+            <div class="section-title">
+                <span>All results</span>
+            </div>
+            <div class="template-grid">
+                <div class="template-card">PORTO FOLIO.</div>
+                <div class="template-card" style="background:#222;">Creative Portfolio</div>
+                <div class="template-card red">CREATIVE BRIEF</div>
+                <div class="template-card grey">Creative Portfolio</div>
+                <div class="template-card" style="background:#554c44;">PITCH DECK</div>
+                <div class="template-card red" style="background:#8b1122;">PITCH DECK</div>
+                <div class="template-card light">portfolio</div>
+                <div class="template-card light">portfolio</div>
+                <div class="template-card" style="background:#111;">PORTFOLIO</div>
+                <div class="template-card" style="background:#222;">DIGITAL</div>
+            </div>
+        </aside>
+
+        <main class="workspace">
+            
+            <div class="toolbar-top">
+                <span>Edit</span>
+                <div class="color-circle"></div>
+                <div class="toolbar-divider"></div>
+                <span>≡</span>
+                <span>☷</span>
+                <div class="toolbar-divider"></div>
+                <span>Effects</span>
+                <span>Animate</span>
+                <span>Position</span>
+                <div class="toolbar-divider"></div>
+                <span>🖌️</span>
+            </div>
+
+            <div class="canvas-area">
+                <div class="canvas">
+                    <div class="shape circle"></div>
+                    <div class="shape square"></div>
+                    <div class="shape triangle"></div>
+                    <div class="shape pentagon"></div>
+
+                    <div class="shape cross"></div>
+                    <div class="shape parallelogram"></div>
+                    <div class="shape arrow-up"></div>
+                    
+                    <div class="selected-wrapper">
+                        <div class="floating-tools">
+                            <span>↻</span>
+                            <span>🔓</span>
+                            <span>❐</span>
+                            <span>🗑️</span>
+                            <span>•••</span>
+                        </div>
+                        
+                        <svg class="heart-svg" viewBox="0 0 100 100">
+                            <path d="M 50 90 C 10 60, -10 20, 25 5 C 40 -2, 50 15, 50 15 C 50 15, 60 -2, 75 5 C 110 20, 90 60, 50 90 Z" />
+                        </svg>
+
+                        <div class="handle tl"></div>
+                        <div class="handle tr"></div>
+                        <div class="handle bl"></div>
+                        <div class="handle br"></div>
+                        <div class="handle-pill top"></div>
+                        <div class="handle-pill bottom"></div>
+                        <div class="handle-pill left"></div>
+                        <div class="handle-pill right"></div>
+                        
+                        <div class="rotate-icon">↻</div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="bottom-bar">
+                <div class="controls">
+                    <span>📝 Notes</span>
+                    <span>⏱️ Timer</span>
+                </div>
+                
+                <div class="mini-preview">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span style="background: none; border: 1px solid #ccc; width: 16px; height: 12px; display: inline-block;">+</span>
+                </div>
+
+                <div class="controls">
+                    <input type="range" min="10" max="200" value="53" style="width: 80px;">
+                    <span>53%</span>
+                    <span>⊞ Pages</span>
+                    <span>1 / 1</span>
+                    <span>⤢</span>
+                </div>
+            </footer>
+        </main>
+    </div>
+</div>
+
 </body>
 </html>
