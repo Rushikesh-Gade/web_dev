@@ -203,9 +203,9 @@ body {
     font-size: 14px;
 }
 
-.template-card.red { background: #dc2626; }
+/* .template-card.red { background: #dc2626; }
 .template-card.grey { background: #4b5563; }
-.template-card.light { background: #f3f4f6; color: black; }
+.template-card.light { background: #f3f4f6; color: black; } */
 
 /* Workspace & Canvas */
 .workspace {
