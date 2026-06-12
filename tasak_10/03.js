@@ -5,4 +5,4 @@ function countWord(text, word) {
   return words.filter(w => w === word).length;
 }
 
-console.log("fox count:", countWord(sentence, "fox"));
+console.log("fox count:", countWord(sentence, "fox"))
