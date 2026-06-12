@@ -3,137 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bootstrap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="new.css">
+    <title>Canva Interface Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="nw.css">
 </head>
-<body class="bg-light">
+<body>
 
-<div class="app d-flex flex-column vh-100 overflow-hidden">
-    
-    <header class="top d-flex justify-content-between align-items-center px-3 text-white flex-shrink-0">
-        <div class="d-flex gap-3 align-items-center">
-            <span>☰</span> <span>File</span> <span>Resize</span> <span>✏️ Editing</span> <span>↩️</span> <span>↪️</span> <span>☁️</span>
+    <header class="top-navbar">
+        <div class="nav-left">
+            <i class="fas fa-bars" style="font-size: 20px; cursor: pointer;"></i>
+            <span style="font-weight: 700; font-size: 18px; margin-right: 15px;">Canva</span>
+            <button class="nav-btn transparent">Home</button>
+            <button class="nav-btn transparent">File</button>
+            <button class="nav-btn transparent">Resize</button>
+            <button class="nav-btn transparent"><i class="fas fa-undo"></i></button>
+            <button class="nav-btn transparent"><i class="fas fa-redo"></i></button>
+            <button class="nav-btn transparent"><i class="fas fa-cloud-check"></i></button>
         </div>
-        <div class="d-flex gap-3 align-items-center">
-            <span>Sample</span>
-            <button class="btn btn-sm text-white trial-btn">👑 Start trial for ₹0</button>
+        <div class="nav-center">
+            <span style="font-size: 14px;">Sample</span>
         </div>
-        <div class="d-flex gap-3 align-items-center">
-            <span>👤</span> <span>📊</span> <span>👑</span> <span>Present</span>
-            <button class="btn btn-light btn-sm text-primary fw-bold px-3">Share</button>
+        <div class="nav-right">
+            <button class="nav-btn btn-trial"><i class="fas fa-crown"></i> Start your trial for ₹0</button>
+            <div style="width: 28px; height: 28px; background: #444; border-radius: 50%; color: white; display:flex; justify-content:center; align-items:center; font-size: 12px;">S</div>
+            <button class="nav-btn transparent"><i class="fas fa-chart-bar"></i></button>
+            <button class="nav-btn btn-share">Share</button>
         </div>
     </header>
 
-    <div class="d-flex flex-grow-1 overflow-hidden">
-        
-        <nav class="menu bg-white border-end d-flex flex-column align-items-center pt-3 gap-4 z-2">
-            <div class="icon active"><div class="box">📑</div>Templates</div>
-            <div class="icon"><div class="box">💠</div>Elements</div>
-            <div class="icon"><div class="box">Ⓣ</div>Text</div>
-            <div class="icon"><div class="box">👑</div>Brand</div>
-            <div class="icon"><div class="box">☁️</div>Uploads</div>
-            <div class="icon"><div class="box">✏️</div>Draw</div>
-            <div class="icon"><div class="box">📁</div>Projects</div>
-            <div class="icon"><div class="box">⬛</div>Apps</div>
-        </nav>
+    <div class="app-body">
+        <aside class="sidebar">
+            <a href="#" class="sidebar-item active"><i class="fas fa-th-large"></i>Templates</a>
+            <a href="#" class="sidebar-item"><i class="fas fa-shapes"></i>Elements</a>
+            <a href="#" class="sidebar-item"><i class="fas fa-font"></i>Text</a>
+            <a href="#" class="sidebar-item">
+                <i class="fas fa-crown crown-badge"></i>
+                <i class="fas fa-award"></i>Brand
+            </a>
+            <a href="#" class="sidebar-item"><i class="fas fa-cloud-upload-alt"></i>Uploads</a>
+            <a href="#" class="sidebar-item"><i class="fas fa-pen"></i>Draw</a>
+            <a href="#" class="sidebar-item"><i class="fas fa-folder"></i>Projects</a>
+            <a href="#" class="sidebar-item"><i class="fas fa-grip-horizontal"></i>Apps</a>
+            <a href="#" class="sidebar-item"><i class="fas fa-magic"></i>Magic Media</a>
+            <a href="#" class="sidebar-item"><i class="fas fa-music"></i>Audio</a>
+            <a href="#" class="sidebar-item"><i class="fas fa-video"></i>Video</a>
+        </aside>
 
-        <aside class="panel bg-white border-end d-flex flex-column overflow-auto">
-            <div class="p-3 border-bottom">
-                <div class="input-group mb-2">
-                    <span class="input-group-text bg-white border-end-0">✨</span>
-                    <input type="text" class="form-control border-start-0 border-end-0 shadow-none px-0" placeholder="Describe ideal design">
-                    <span class="input-group-text bg-white border-start-0">🎤</span>
-                </div>
-                <div class="d-flex gap-2">
-                    <button class="btn btn-outline-secondary w-50 fw-bold">✨ Generate</button>
-                    <button class="btn btn-search w-50 fw-bold text-white">Search</button>
-                </div>
+        <aside class="left-panel">
+            <div class="search-box">
+                <i class="fas fa-plus" style="color: #666;"></i>
+                <input type="text" placeholder="Describe your ideal design">
+                <i class="fas fa-microphone" style="color: #666;"></i>
             </div>
-
-            <div class="d-flex justify-content-between px-3 mt-3 mb-2 small fw-bold">
-                <span class="text-dark">Recently used</span> <span class="text-secondary fw-normal">See all</span>
-            </div>
-            <div class="d-flex gap-2 px-3">
-                <div class="recent border rounded"><img src="https://live.staticflickr.com/7474/27546526401_511fba07eb.jpg" alt="Recent 1"></div>
-                <div class="recent border rounded"><img src="https://live.staticflickr.com/7474/27546526401_511fba07eb.jpg" alt="Recent 2"></div>
-                <div class="recent border rounded"><img src="https://live.staticflickr.com/7474/27546526401_511fba07eb.jpg" alt="Recent 3"></div>
-            </div>
-
-            <div class="px-3 mt-4 mb-2 small fw-bold text-dark">All results</div>
             
-            <div class="row g-2 px-3 pb-3 m-0">
-                <div class="col-6"><div class="tpl-card"><img src="https://live.staticflickr.com/7474/27546526401_511fba07eb.jpg" alt="Template"></div></div>
-                <div class="col-6"><div class="tpl-card"><img src="https://live.staticflickr.com/7474/27546526401_511fba07eb.jpg" alt="Template"></div></div>
-                <div class="col-6"><div class="tpl-card"><img src="https://live.staticflickr.com/7474/27546526401_511fba07eb.jpg" alt="Template"></div></div>
-                <div class="col-6"><div class="tpl-card"><img src="https://live.staticflickr.com/7474/27546526401_511fba07eb.jpg" alt="Template"></div></div>
-                <div class="col-6"><div class="tpl-card"><img src="https://live.staticflickr.com/7474/27546526401_511fba07eb.jpg" alt="Template"></div></div>
-                <div class="col-6"><div class="tpl-card"><img src="https://live.staticflickr.com/7474/27546526401_511fba07eb.jpg" alt="Template"></div></div>
-                <div class="col-6"><div class="tpl-card"><img src="https://live.staticflickr.com/7474/27546526401_511fba07eb.jpg" alt="Template"></div></div>
-                <div class="col-6"><div class="tpl-card"><img src="https://live.staticflickr.com/7474/27546526401_511fba07eb.jpg" alt="Template"></div></div>
-                <div class="col-6"><div class="tpl-card"><img src="https://live.staticflickr.com/7474/27546526401_511fba07eb.jpg" alt="Template"></div></div>
-                <div class="col-6"><div class="tpl-card"><img src="https://live.staticflickr.com/7474/27546526401_511fba07eb.jpg" alt="Template"></div></div>
+            <div class="action-buttons">
+                <button class="btn-generate"><i class="fas fa-magic" style="color: var(--canva-purple);"></i> Generate</button>
+                <button class="btn-search">Search</button>
+            </div>
+
+            <div class="section-title">Recently used <span>See all</span></div>
+            <div class="grid-2">
+                <div class="template-card" style="background-image: url('https://picsum.photos/seed/recent1/150/75');"></div>
+                <div class="template-card" style="background-image: url('https://picsum.photos/seed/recent2/150/75');"></div>
+            </div>
+
+            <div class="section-title">All results</div>
+            <div class="grid-2">
+                <div class="template-card" style="background-image: url('https://picsum.photos/seed/port1/150/75');"></div>
+                <div class="template-card" style="background-image: url('https://picsum.photos/seed/port2/150/75');"></div>
+                <div class="template-card" style="background-image: url('https://picsum.photos/seed/port3/150/75');"></div>
+                <div class="template-card" style="background-image: url('https://picsum.photos/seed/port4/150/75');"></div>
+                <div class="template-card" style="background-image: url('https://picsum.photos/seed/port5/150/75');"></div>
+                <div class="template-card" style="background-image: url('https://picsum.photos/seed/port6/150/75');"></div>
+                <div class="template-card" style="background-image: url('https://picsum.photos/seed/port7/150/75');"></div>
+                <div class="template-card" style="background-image: url('https://picsum.photos/seed/port8/150/75');"></div>
+                <div class="template-card" style="background-image: url('https://picsum.photos/seed/port9/150/75');"></div>
+                <div class="template-card" style="background-image: url('https://picsum.photos/seed/port10/150/75');"></div>
+                <div class="template-card" style="background-image: url('https://picsum.photos/seed/port11/150/75');"></div>
+                <div class="template-card" style="background-image: url('https://picsum.photos/seed/port12/150/75');"></div>
+                <div class="template-card" style="background-image: url('https://picsum.photos/seed/port13/150/75');"></div>
+                <div class="template-card" style="background-image: url('https://picsum.photos/seed/port14/150/75');"></div>
             </div>
         </aside>
 
-        <main class="flex-grow-1 d-flex flex-column position-relative">
+        <main class="workspace">
             
-            <div class="float-bar position-absolute top-0 start-50 translate-middle-x mt-3 bg-white shadow-sm rounded-pill px-3 py-2 d-flex align-items-center gap-3 z-3 small fw-bold">
-                <span>Edit</span>
-                <div class="dot bg-danger"></div>
-                <div class="vr"></div>
-                <span class="fs-5">≡</span> <span class="fs-5">☷</span>
-                <div class="vr"></div>
-                <span>Effects</span> <span>Animate</span> <span>Position</span>
-                <div class="vr"></div>
-                <span class="fs-5">🖌️</span>
+            <div class="canvas-toolbar">
+                <button class="toolbar-btn"><span class="color-dot"></span></button>
+                <button class="toolbar-btn"><i class="fas fa-grip-lines"></i></button>
+                <button class="toolbar-btn"><i class="fas fa-border-style"></i></button>
+                <div style="width: 1px; height: 20px; background: #ddd; margin: 0 5px;"></div>
+                <button class="toolbar-btn">Effects</button>
+                <button class="toolbar-btn">Animate</button>
+                <button class="toolbar-btn">Position</button>
+                <button class="toolbar-btn"><i class="fas fa-paint-roller"></i></button>
             </div>
 
-            <div class="flex-grow-1 d-flex align-items-center justify-content-center overflow-auto p-4">
-                <div class="board bg-white shadow rounded p-5 d-grid gap-4 justify-content-center align-content-center">
-                    
-                    <div class="shape circle bg-lime rounded-circle"></div>
-                    <div class="shape square bg-yellow"></div>
-                    <div class="shape tri bg-orange"></div>
-                    <div class="shape penta bg-blue"></div>
+            <div class="canvas-area">
+                <div class="canvas">
+                    <div class="shape-container"><div class="shape circle"></div></div>
+                    <div class="shape-container"><div class="shape square"></div></div>
+                    <div class="shape-container"><div class="shape triangle"></div></div>
+                    <div class="shape-container"><div class="shape pentagon"></div></div>
 
-                    <div class="shape cross bg-black"></div>
-                    <div class="shape para bg-purple"></div>
-                    <div class="shape arrow bg-violet"></div>
+                    <div class="shape-container"><div class="shape plus"></div></div>
+                    <div class="shape-container"><div class="shape parallelogram"></div></div>
+                    <div class="shape-container"><div class="shape arrow"></div></div>
                     
-                    <div class="select-box border border-primary d-flex align-items-center justify-content-center position-relative">
-                        <div class="tool-pop position-absolute bg-white border shadow-sm rounded px-2 py-1 d-flex gap-2"> 
-                            <span>↻</span> <span>🔓</span> <span>❐</span> <span class="text-danger">🗑️</span> <span>•••</span>
+                    <div class="shape-container selected">
+                        <div class="floating-menu">
+                            <i class="far fa-copy"></i>
+                            <i class="fas fa-lock-open"></i>
+                            <i class="far fa-clone"></i>
+                            <i class="far fa-trash-alt"></i>
+                            <i class="fas fa-ellipsis-h"></i>
                         </div>
-                        
-                        <svg class="heart" viewBox="0 0 100 100">
-                            <path d="M 50 90 C 10 60, -10 20, 25 5 C 40 -2, 50 15, 50 15 C 50 15, 60 -2, 75 5 C 110 20, 90 60, 50 90 Z" />
+
+                        <svg class="heart-svg" viewBox="2 3 20 18.35" preserveAspectRatio="none">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
                         </svg>
 
-                        <div class="hnd h-tl"></div> <div class="hnd h-tr"></div>
-                        <div class="hnd h-bl"></div> <div class="hnd h-br"></div>
-                        <div class="pill p-t"></div> <div class="pill p-b"></div>
-                        <div class="pill p-l"></div> <div class="pill p-r"></div>
-                        
-                        <div class="rotate position-absolute bg-white border rounded-circle shadow-sm d-flex align-items-center justify-content-center">↻</div>
+                        <div class="handle nw"></div>
+                        <div class="handle n"></div>
+                        <div class="handle ne"></div>
+                        <div class="handle w"></div>
+                        <div class="handle e"></div>
+                        <div class="handle sw"></div>
+                        <div class="handle s"></div>
+                        <div class="handle se"></div>
+                        <div class="rotate-handle"><i class="fas fa-sync-alt"></i></div>
                     </div>
                 </div>
             </div>
 
-            <footer class="bg-white border-top d-flex justify-content-between align-items-center px-3 py-2 small text-secondary">
-                <div class="d-flex gap-3"> <span>📝 Notes</span> <span>⏱️ Timer</span> </div>
-                <div class="preview bg-light border rounded px-2 py-1 d-flex gap-2">
-                    <span class="page bg-primary rounded-1"></span> <span class="page bg-primary rounded-1"></span> <span class="page bg-primary rounded-1"></span> <span class="page border border-secondary rounded-1 d-flex align-items-center justify-content-center text-dark">+</span>
+            <div class="bottom-bar">
+                <div class="bottom-tools">
+                    <i class="far fa-sticky-note"></i> Notes
+                    <i class="fas fa-stopwatch" style="margin-left: 10px;"></i> Timer
                 </div>
-                <div class="d-flex align-items-center gap-3">
-                    <input type="range" class="form-range" style="width: 80px;" min="1" max="100" value="53">
-                    <span>53%</span> <span>⊞ Pages</span> <span>1 / 1</span> <span class="fs-5">⤢</span>
+                
+                <div class="bottom-tools zoom-slider">
+                    <div style="display:flex; gap: 3px; border: 1px solid #ccc; padding: 2px 6px; border-radius: 4px;">
+                        <i class="fas fa-square" style="color: #ffda47; font-size:10px;"></i>
+                        <i class="fas fa-play" style="color: #ff832b; font-size:10px; transform: rotate(-90deg);"></i>
+                        <i class="fas fa-heart" style="color: #ff3344; font-size:10px;"></i>
+                    </div>
+                    <i class="fas fa-minus"></i>
+                    <input type="range" min="10" max="200" value="53">
+                    <span style="font-weight: 600;">53%</span>
                 </div>
-            </footer>
-            
+
+                <div class="bottom-tools">
+                    <i class="fas fa-th"></i>
+                    <span>Pages 1/1</span>
+                    <i class="fas fa-expand"></i>
+                </div>
+            </div>
         </main>
     </div>
-</div>
-
 </body>
 </html>
