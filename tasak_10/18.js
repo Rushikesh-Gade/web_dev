@@ -1,9 +1,9 @@
 const users = [
-  { user: "A", action: "login"  },
-  { user: "B", action: "logout" },
-  { user: "C", action: "login"  }
+  { name: "John", age: 25 },
+  { name: "Emma", age: 16 },
+  { name: "Alex", age: 20 }
 ];
 
-const loginCount = users.filter(u => u.action === "login").length;
+const adults = users.filter(u => u.age >= 18).map(u => u.name);
 
-console.log("Login Count:", loginCount);
+console.log("Adults:", adults);
