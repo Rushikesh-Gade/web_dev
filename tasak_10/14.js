@@ -1,8 +1,10 @@
-const customers = [
-  { customer: "John", amount: 50000 },
-  { customer: "Emma", amount: 20000 }
-];
+const marks = [45, 80, 60, 90, 30];
 
-const totalSpending = customers.reduce((sum, c) => sum + c.amount, 0);
+function getAverage(arr) {
+  return arr.reduce((a, b) => a + b, 0) / arr.length;
+}
 
-console.log("Total Spending:", totalSpending);
+const passing = marks.filter(m => m > 50);
+
+console.log("Passing Marks:", passing);
+console.log("Average:", getAverage(passing));
