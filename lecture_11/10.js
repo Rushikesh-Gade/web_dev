@@ -1,4 +1,9 @@
-const fruits = ["apple", "banana","apple", "orange", "banana", "apple"];
+const fruits = ["apple",
+     "banana",
+     "apple",
+     "orange",
+     "banana",
+     "apple"];
 
 const count = fruits.reduce((acc, fruit) => {
     if (acc[fruit]) {
