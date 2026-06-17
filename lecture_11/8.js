@@ -6,4 +6,5 @@ const students = [
 ];
 
 const pass= students.filter(student => student.marks >= 40);
-console.log(pass);
+const passNames = pass.map(student => student.name);
+console.log(passNames);
