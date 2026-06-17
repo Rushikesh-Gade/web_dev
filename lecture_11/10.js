@@ -12,5 +12,5 @@ const count = fruits.reduce((tot, fruit) => {
         tot[fruit] = 1;
     }
     return tot;
-}, 0);
+}, {});
 console.log(count);
