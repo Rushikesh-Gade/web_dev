@@ -5,12 +5,12 @@ const fruits = ["apple",
      "banana",
      "apple"];
 
-const count = fruits.reduce((acc, fruit) => {
-    if (acc[fruit]) {
-        acc[fruit]++;
+const count = fruits.reduce((tot, fruit) => {
+    if (tot[fruit]) {
+        tot[fruit]++;
     } else {
-        acc[fruit] = 1;
+        tot[fruit] = 1;
     }
-    return acc;
-}, {});
+    return tot;
+}, 0);
 console.log(count);
