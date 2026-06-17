@@ -5,6 +5,6 @@ const students = [
     {name:"D", marks: 25},
 ];
 
-const pass= students.filter(student => student.marks >= 40);
-const passNames = pass.map(student => student.name);
-console.log(passNames);
+const pass= students.filter(student => student.marks >= 40).map(student => student.name);
+
+console.log(pass);
