@@ -5,7 +5,7 @@ const users = [
     {name:"D", age:22}
 ]
 
-const remove  = users.filter(user => user.age < 18);
+const remove  = users.pop(user => user.age >= 18);
 console.log(remove);
 
 console.log(users);
