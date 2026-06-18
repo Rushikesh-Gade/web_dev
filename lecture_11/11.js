@@ -15,6 +15,12 @@ const students = [
 
 const averageMarks = students.map(student => {
     const average = student.marks.reduce((sum, mark) => sum + mark, 0)/ student.marks.length;
-    return {average };
+    average.filter(avg => avg >= 85);
+    sort((a, b) => b - a);
+    return {
+        name: student.name,
+        averageMarks: average
+    };
 });
 console.log(averageMarks);
+
