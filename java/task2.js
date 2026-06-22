@@ -1,4 +1,4 @@
-Create a login → profile → posts flow using callbacks.
+// Create a login → profile → posts flow using callbacks.
 function login(username, password, callback) {
   console.log("Logging in...");
   setTimeout(() => {
