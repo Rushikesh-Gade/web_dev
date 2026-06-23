@@ -1,5 +1,5 @@
 class employee {
-    Properties(id, name) {
+    constructor(id, name) {
         this.id = id;
         this.name = name;
     }
@@ -14,7 +14,7 @@ class employee {
 }
 
 class Developer extends employee {
-    Properties(id, name, Language) {
+    constructor(id, name, Language) {
         super(id, name);
         this.Language = Language;
     }
@@ -27,7 +27,7 @@ class Developer extends employee {
 }
 
 class FrontendDeveloper extends Developer {
-    Properties(id, name, language, framework) {
+    constructor(id, name, language, framework) {
         super(id, name, language);
         this.framework = framework;
     }
@@ -40,7 +40,7 @@ class FrontendDeveloper extends Developer {
 }
 
 class manager extends employee {
-    Properties(id, name, teamSize) {
+    constructor(id, name, teamSize) {
         super(id, name);
         this.teamSize = teamSize;
     }
