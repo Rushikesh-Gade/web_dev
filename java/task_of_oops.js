@@ -51,3 +51,9 @@ class manager extends employee {
         console.log(`${this.name} is managing a team of ${this.teamSize}`);
     }
 }
+
+const employee = new employee(111, "ram");
+const Developer = new Developer(222, "shaym", "JavaScript");
+const FrontendDeveloper = new FrontendDeveloper(333, "Rishi", "C++", "DSA");
+const manager = new manager(444, "Rohit", 10);
+
