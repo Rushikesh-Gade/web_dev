@@ -34,7 +34,7 @@ class FrontendDeveloper extends Developer {
     buildUI() {
     console.log(`${this.name} builds UI using ${this.framework}`);
     }
-      work() {
+    work() {
     console.log(`${this.name} is designing frontend with ${this.framework}`);
     }
 }
@@ -44,3 +44,6 @@ class manager extends employee {
         super(id, name);
         this.teamSize = teamSize;
     }
+    conductMeeting() {
+    console.log(`${this.name} is conducting a meeting with a team of ${this.teamSize} members.`);
+  }
