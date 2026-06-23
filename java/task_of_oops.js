@@ -57,3 +57,12 @@ const Developer = new Developer(222, "shaym", "JavaScript");
 const FrontendDeveloper = new FrontendDeveloper(333, "Rishi", "C++", "DSA");
 const manager = new manager(444, "Rohit", 10);
 
+employee.work();            
+employee.showDetails();     
+
+FrontendDeveloper.work();         
+FrontendDeveloper.writeCode();    
+FrontendDeveloper.buildUI();      
+
+manager.work();             
+manager.conductMeeting();
