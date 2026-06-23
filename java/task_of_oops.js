@@ -1,4 +1,4 @@
-class employee {
+class Employee {
     constructor(id, name) {
         this.id = id;
         this.name = name;
@@ -8,12 +8,12 @@ class employee {
   }
 
   showDetails() {
-    console.log(`ID: ${this.id}, Name: ${this.name}`);
+    console.log(`id: ${this.id}, Name: ${this.name}`);
   }
 
 }
 
-class Developer extends employee {
+class Developer extends Employee {
     constructor(id, name, Language) {
         super(id, name);
         this.Language = Language;
@@ -39,7 +39,7 @@ class FrontendDeveloper extends Developer {
     }
 }
 
-class manager extends employee {
+class Manager extends Employee {
     constructor(id, name, teamSize) {
         super(id, name);
         this.teamSize = teamSize;
@@ -52,17 +52,17 @@ class manager extends employee {
     }
 }
 
-const employee = new employee(111, "ram");
-const Developer = new Developer(222, "shaym", "JavaScript");
-const FrontendDeveloper = new FrontendDeveloper(333, "Rishi", "C++", "DSA");
-const manager = new manager(444, "Rohit", 10);
+const E = new Employee(111, "ram");
+const D = new Developer(222, "shaym", "JavaScript");
+const F = new FrontendDeveloper(333, "Rishi", "C++", "DSA");
+const M = new Manager(444, "Rohit", 10);
 
-employee.work();            
-employee.showDetails();     
+E.work();            
+E.showDetails();     
 
-FrontendDeveloper.work();         
-FrontendDeveloper.writeCode();    
-FrontendDeveloper.buildUI();      
+F.work();         
+F.writeCode();    
+F.buildUI();      
 
-manager.work();             
-manager.conductMeeting();
+M.work();             
+M.conductMeeting();
