@@ -38,3 +38,9 @@ class FrontendDeveloper extends Developer {
     console.log(`${this.name} is designing frontend with ${this.framework}`);
     }
 }
+
+class manager extends employee {
+    Properties(id, name, teamSize) {
+        super(id, name);
+        this.teamSize = teamSize;
+    }
