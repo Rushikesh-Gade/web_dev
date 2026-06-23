@@ -19,23 +19,23 @@ class Developer extends employee {
         this.Language = Language;
     }
      writeCode() {
-    console.log(`${this.name} writes code in ${this.Language}`);
+        console.log(`${this.name} writes code in ${this.Language}`);
      }
       work() {
-    console.log(`${this.name} is developing software using ${this.Language}`);
+        console.log(`${this.name} is developing software using ${this.Language}`);
      }
 }
 
 class FrontendDeveloper extends Developer {
     Properties(id, name, language, framework) {
-    super(id, name, language);
-    this.framework = framework;
+        super(id, name, language);
+        this.framework = framework;
     }
     buildUI() {
-    console.log(`${this.name} builds UI using ${this.framework}`);
+        console.log(`${this.name} builds UI using ${this.framework}`);
     }
     work() {
-    console.log(`${this.name} is designing frontend with ${this.framework}`);
+        console.log(`${this.name} is designing frontend with ${this.framework}`);
     }
 }
 
@@ -45,5 +45,9 @@ class manager extends employee {
         this.teamSize = teamSize;
     }
     conductMeeting() {
-    console.log(`${this.name} is conducting a meeting with a team of ${this.teamSize} members.`);
-  }
+        console.log(`${this.name} is conducting a meeting with a team of ${this.teamSize} members.`);
+    }
+    work() {
+        console.log(`${this.name} is managing a team of ${this.teamSize}`);
+    }
+}
