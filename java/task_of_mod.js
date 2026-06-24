@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM & BOM Demo</title>
+  <style>
+    body { font-family: Arial; text-align: center; margin-top: 50px; }
+    button { margin: 10px; padding: 10px 20px; }
+    input { padding: 8px; width: 200px; }
+  </style>
+</head>
+<body>
+  <h1>DOM & BOM Manipulation</h1>
+  <input type="text" id="nameInput" placeholder="Enter your name">
+  <button id="greetBtn">Greet Me</button>
+  <button id="changeColorBtn">Change Background</button>
+  <p id="output"></p>
+
+  <script>
+    // DOM Manipulation
+    const nameInput = document.getElementById('nameInput');
+    const greetBtn = document.getElementById('greetBtn');
+    const changeColorBtn = document.getElementById('changeColorBtn');
+    const output = document.getElementById('output');
+
+    greetBtn.addEventListener('click', () => {
+      const name = nameInput.value.trim();
+      if (name) {
+        output.textContent = `Hello, ${name}! Welcome to DOM & BOM demo.`;
+      } else {
+        alert('Please enter your name!');
+      }
+    });
+
+    // BOM Manipulation
+    changeColorBtn.addEventListener('click', () => {
+      const colors = ['lightblue', 'lightgreen', 'lightpink', 'lavender'];
+      document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+      window.alert('Background color changed!');
+    });
+  </script>
+</body>
+</html>
