@@ -17,7 +17,8 @@
   <p id="output"></p>
 
   <script>
-    // DOM Manipulation
+    //DOM Manipulation
+
     const nameInput = document.getElementById('nameInput');
     const greetBtn = document.getElementById('greetBtn');
     const changeColorBtn = document.getElementById('changeColorBtn');
@@ -33,6 +34,7 @@
     });
 
     // BOM Manipulation
+    
     changeColorBtn.addEventListener('click', () => {
       const colors = ['lightblue', 'lightgreen', 'lightpink', 'lavender'];
       document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
