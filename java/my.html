@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Landing Page with JS</title>
+</head>
+<body>
+  <script>
+    
+    const header = document.createElement("header");
+    header.style.background = "green";
+    header.style.color = "white";
+    header.style.padding = "30px";
+    header.style.textAlign = "center";
+
+    const title = document.createElement("h1");
+    title.textContent = "Welcome Naman Sir";
+    header.appendChild(title);
+
+    const subtitle = document.createElement("p");
+    subtitle.textContent = "only JavaScript se banaya hai sir ab ye page";
+    header.appendChild(subtitle);
+
+    document.body.appendChild(header);
+
+    
+    const hero = document.createElement("section");
+    hero.style.padding = "40px";
+    hero.style.textAlign = "center";
+
+    const heroText = document.createElement("h2");
+    heroText.textContent = "Hello Visitor!";
+    hero.appendChild(heroText);
+
+    const btn = document.createElement("button");
+    btn.textContent = "Click Me";
+    btn.style.padding = "10px 20px";
+    btn.style.margin = "10px";
+    btn.style.background = "green";
+    btn.style.color = "white";
+    btn.style.border = "none";
+    btn.style.borderRadius = "5px";
+    btn.style.cursor = "pointer";
+
+    hero.appendChild(btn);
+    document.body.appendChild(hero);
+
+    const footer = document.createElement("footer");
+    footer.style.background = "green";
+    footer.style.color = "white";
+    footer.style.padding = "20px";
+    footer.style.textAlign = "center";
+
+    const footerText = document.createElement("p");
+    footerText.textContent = "Naman sir ye mera Landing Page hai";
+    footer.appendChild(footerText);
+
+     document.body.appendChild(footer);
+
+    // BOM 
+    btn.addEventListener("click", () => {
+      window.alert("Thanks for visiting my page!");
+      footerText.textContent = "You clicked the button — DOM updated!";
+    });
+  </script>
+</body>
+</html>
